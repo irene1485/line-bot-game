@@ -1,0 +1,9 @@
+{
+  "name": "line-bot-vercel",
+  "version": "1.0.0",
+  "description": "My Fast LINE Bot",
+  "main": "api/webhook.js",
+  "dependencies": {
+    "@line/bot-sdk": "^8.0.0"
+  }
+}
