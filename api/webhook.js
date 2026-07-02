@@ -655,6 +655,63 @@ async function handleEvent(event) {
     userText === '嘟...嘟...嘟...' || 
     userText === '有點擔心你...如果你有什麼事想跟我聊聊，我隨時都在哦！'
   ) {
-    // 【Q4 劇情】
+    // 【Q4 劇情】(接續 Q3 的三個選項)
     replyMessages = [
       {
+        "type": "flex",
+        "altText": "幾天後...",
+        "contents": {
+          "type": "bubble",
+          "size": "kilo",
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "paddingAll": "xl",
+            "contents": [
+              {
+                "type": "text",
+                "text": "又過了幾天...\n你發現Rain主動私訊\n你點開查看",
+                "wrap": true,
+                "weight": "bold",
+                "color": "#888888",
+                "align": "start"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "text",
+        "text": "最近發生很多事 心情好亂",
+        "quickReply": {
+          "items": [
+            {
+              "type": "action",
+              "action": {
+                "type": "message",
+                "label": "A 給他很多建議",
+                "text": "你昨天是不是太晚睡了？不要一直在家裡，多去外面走一走呀～"
+              }
+            },
+            {
+              "type": "action",
+              "action": {
+                "type": "message",
+                "label": "B 先聽他說，陪他聊",
+                "text": "你會想跟我說說看發生了什麼事嗎？"
+              }
+            },
+            {
+              "type": "action",
+              "action": {
+                "type": "message",
+                "label": "C 試著轉移話題",
+                "text": "我覺得你只是太久沒打遊戲放鬆一下了啦~要不要來一場？"
+              }
+            }
+          ]
+        }
+      }
+    ];
+  }
+
