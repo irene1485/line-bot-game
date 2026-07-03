@@ -40,12 +40,12 @@ async function handleEvent(event) {
   let replyMessages = [];
 
   // 💡 抓取玩家暱稱，並加上防呆機制 (萬一抓不到就叫他"玩家")
-  let userName = "玩家";
+  let userName = "";
   try {
     const profile = await client.getProfile(event.source.userId);
     userName = profile.displayName;
   } catch (error) {
-    console.log("抓取暱稱失敗，使用預設稱呼");
+    console.log("抓取暱稱失敗，留空處理");
   }
 
   // 🔽🔽🔽 劇本分流開始 🔽🔽🔽
@@ -55,7 +55,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "text",
-        "text": `欸欸${userName}\n你有看到Rain的限動嗎？` 
+        "text": userName ? `欸欸${userName}\n你有看到Rain的限動嗎？`: "欸欸，你有看到Rain的限動嗎？" 
       },
       {
         "type": "image",
@@ -64,7 +64,7 @@ async function handleEvent(event) {
       },
       {
         "type": "flex",
-        "altText": "選項：你打算去Instagram看一下",
+        "altText": "你打算去Instagram看一下",
         "contents": {
           "type": "bubble",
           "body": {
@@ -129,7 +129,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "情境：隔天...",
+        "altText": "隔天...",
         "contents": {
           "type": "bubble",
           "size": "kilo",
@@ -152,7 +152,7 @@ async function handleEvent(event) {
       },
       {
         "type": "text",
-        "text": `${userName}\n我下禮拜還是不跟你們去吃飯了...`,
+        "text": userName ? `${userName}\n我下禮拜還是不跟你們去吃飯了...` : "我下禮拜還是不跟你們去吃飯了...",
         "quickReply": {
           "items": [
             {
@@ -190,7 +190,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "情境：已經過了很多天...",
+        "altText": "已經過了很多天...",
         "contents": {
           "type": "bubble",
           "size": "kilo",
@@ -345,7 +345,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "情境：已經過了很多天...",
+        "altText": "已經過了很多天...",
         "contents": {
           "type": "bubble",
           "size": "kilo",
@@ -500,7 +500,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "情境：已經過了很多天...",
+        "altText": "已經過了很多天...",
         "contents": {
           "type": "bubble",
           "size": "kilo",
@@ -766,7 +766,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "遊戲結算：不同的選擇，不同的未來 🚩守護四部曲",
+        "altText": "遊戲結算：不同的選擇，不同的未來",
         "contents": {
           "type": "bubble",
           "size": "mega",
@@ -967,7 +967,7 @@ async function handleEvent(event) {
     replyMessages = [
       {
         "type": "flex",
-        "altText": "遊戲結算：不同的選擇，不同的未來 🚩守護四部曲",
+        "altText": "遊戲結算：不同的選擇，不同的未來",
         "contents": {
           "type": "bubble",
           "size": "mega",
