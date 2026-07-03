@@ -714,3 +714,19 @@ async function handleEvent(event) {
       }
     ];
   }
+
+  else {
+    // 【防呆機制】玩家亂打字時
+    replyMessages = [
+      {
+        "type": "text",
+        "text": "這個選擇似乎不在命運的安排中... 請點擊選單或按鈕繼續遊戲喔！"
+      }
+    ];
+  }
+
+  // 🔼🔼🔼 劇本分流結束 🔼🔼🔼
+
+  // 回傳訊息給玩家
+  return client.replyMessage(event.replyToken, replyMessages);
+}
