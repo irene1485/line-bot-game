@@ -1160,6 +1160,18 @@ async function handleEvent(event) {
     ];
   }
 
+  // 🔽🔽🔽 新增這段：官方後台專用關鍵字（消音區） 🔽🔽🔽
+  else if (
+    userText === '心衛中心據點' || 
+    userText === '臺北市心理衛生資源' || 
+    userText === '心理衛生專線' || 
+    userText === '我要抽獎！'
+  ) {
+    // 當玩家輸入這些關鍵字時，程式直接回傳 null (什麼都不做)，讓 LINE 官方後台去接手！
+    return Promise.resolve(null);
+  }
+  // 🔼🔼🔼 消音區結束 🔼🔼🔼
+    
   else {
 // 【防呆機制】玩家亂打字時
 replyMessages = [
