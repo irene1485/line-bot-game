@@ -803,7 +803,7 @@ async function handleEvent(event) {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "你選擇陪伴Rain，並和他一起尋求專業協助。原來,Rain最近經歷人生第一次分手，在心理師的陪伴下，漸漸從悲傷中復原，開始願意與朋友出門走走。",
+                    "text": "你選擇陪伴Rain，並和他一起尋求專業協助。原來，Rain最近經歷人生第一次分手，在心理師的陪伴下，漸漸從悲傷中復原，開始願意與朋友出門走走。",
                     "wrap": true,
                     "size": "sm",
                     "color": "#666666",
