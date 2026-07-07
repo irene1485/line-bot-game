@@ -159,7 +159,7 @@ async function handleEvent(event) {
               "type": "action",
               "action": {
                 "type": "message",
-                "label": "A 主動關心",
+                "label": "A 主動關心並詢問",
                 "text": "為什麼？有什麼事情嗎？感覺你最近怪怪的"
               }
             },
@@ -167,7 +167,7 @@ async function handleEvent(event) {
               "type": "action",
               "action": {
                 "type": "message",
-                "label": "B 直接答應",
+                "label": "B 不疑有他，直接答應",
                 "text": "喔！好吧"
               }
             },
@@ -175,7 +175,7 @@ async function handleEvent(event) {
               "type": "action",
               "action": {
                 "type": "message",
-                "label": "C 質疑朋友",
+                "label": "C 對方爽約，應該質問他",
                 "text": "蛤？我們不是都講好了嗎？餐廳也都訂位了耶 😩"
               }
             }
