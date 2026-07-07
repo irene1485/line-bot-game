@@ -1162,7 +1162,7 @@ async function handleEvent(event) {
 
   // 🔽🔽🔽 新增這段：官方後台專用關鍵字（消音區） 🔽🔽🔽
   else if (
-    userText === '心衛中心據點' || 
+    userText === '社區心理衛生中心' || 
     userText === '臺北市心理衛生資源' || 
     userText === '心理衛生專線' || 
     userText === '我要抽獎！'
