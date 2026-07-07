@@ -378,7 +378,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/wTJ2tx1G/Q2B-A.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
@@ -417,7 +417,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/Njc4RhTt/Q2B-B.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
@@ -456,7 +456,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/zvwkc0Y5/Q2B-C.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
@@ -533,7 +533,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/gkDDySKs/Q2C-A.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
@@ -572,7 +572,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/K8pDw1w1/Q2C-B.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
@@ -611,7 +611,7 @@ async function handleEvent(event) {
                 "type": "image",
                 "url": "https://i.postimg.cc/fb3fNwQX/Q2C-C.png",
                 "size": "full",
-                "aspectRatio": "1:1",
+                "aspectRatio": "1.54:1",
                 "aspectMode": "cover"
               },
               "body": {
