@@ -59,8 +59,8 @@ async function handleEvent(event) {
       },
       {
         "type": "image",
-        "originalContentUrl": "https://i.postimg.cc/0yYSvbzK/xian-dong-shi-yi-tu.jpg",
-        "previewImageUrl": "https://i.postimg.cc/0yYSvbzK/xian-dong-shi-yi-tu.jpg"
+        "originalContentUrl": "https://i.postimg.cc/7PFjj4N4/260717-xian-dong-shi-yi-tu.jpg",
+        "previewImageUrl": "https://i.postimg.cc/7PFjj4N4/260717-xian-dong-shi-yi-tu.jpg"
       },
       {
         "type": "flex",
